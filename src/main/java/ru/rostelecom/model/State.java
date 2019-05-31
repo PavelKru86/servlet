@@ -1,21 +1,24 @@
 package ru.rostelecom.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class State {
 
-    private String short_name;
+    @JsonProperty("short_name")
+    private String shortName;
     private String name;
 
-    public State(String short_name, String name) {
-        this.short_name = short_name;
+    public State(String shortName, String name) {
+        this.shortName = shortName;
         this.name = name;
     }
 
     public String getShort_name() {
-        return short_name;
+        return shortName;
     }
 
-    public void setShort_name(String short_name) {
-        this.short_name = short_name;
+    public void setShort_name(String shortName) {
+        this.shortName = shortName;
     }
 
     public String getName() {
@@ -29,7 +32,7 @@ public class State {
     @Override
     public String toString() {
         return "State{" +
-                "short_name='" + short_name + '\'' +
+                "shortName='" + shortName + '\'' +
                 ", name='" + name + '\'' +
                 '}';
     }

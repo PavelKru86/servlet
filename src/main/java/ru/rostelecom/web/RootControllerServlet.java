@@ -17,7 +17,7 @@ import java.util.List;
 @WebServlet(name = "State", urlPatterns = "/state")
 public class RootControllerServlet extends HttpServlet {
 
-    private List<State> states = Arrays.asList(
+    public static final List<State> states = Arrays.asList(
             new State("AL", "Alabama"),
             new State("AK", "Alaska"),
             new State("AZ", "Arizona"),
@@ -64,6 +64,9 @@ public class RootControllerServlet extends HttpServlet {
             new State("WA", "Washington")
 
     );
+
+
+
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
 
