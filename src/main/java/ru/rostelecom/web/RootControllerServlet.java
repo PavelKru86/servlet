@@ -27,13 +27,45 @@ public class RootControllerServlet extends HttpServlet {
             new State("CT", "Connecticut"),
             new State("FL", "Florida"),
             new State("GA", "Georgia"),
+            new State("WA", "Washington"),
+            new State("WA", "Washington"),
+            new State("AL", "Alabama"),
+            new State("AK", "Alaska"),
+            new State("AZ", "Arizona"),
+            new State("AR", "Arkansas"),
+            new State("CA", "California"),
+            new State("CO", "Colorado"),
+            new State("CT", "Connecticut"),
+            new State("FL", "Florida"),
+            new State("GA", "Georgia"),
+            new State("WA", "Washington"),
+            new State("WA", "Washington"),
+            new State("AL", "Alabama"),
+            new State("AK", "Alaska"),
+            new State("AZ", "Arizona"),
+            new State("AR", "Arkansas"),
+            new State("CA", "California"),
+            new State("CO", "Colorado"),
+            new State("CT", "Connecticut"),
+            new State("FL", "Florida"),
+            new State("GA", "Georgia"),
+            new State("WA", "Washington"),
+            new State("WA", "Washington"),
+            new State("AL", "Alabama"),
+            new State("AK", "Alaska"),
+            new State("AZ", "Arizona"),
+            new State("AR", "Arkansas"),
+            new State("CA", "California"),
+            new State("CO", "Colorado"),
+            new State("CT", "Connecticut"),
+            new State("FL", "Florida"),
+            new State("GA", "Georgia"),
+            new State("WA", "Washington"),
             new State("WA", "Washington")
 
     );
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
-
-
 
         response.setContentType("application/json");
         JSONObject json = new JSONObject();
