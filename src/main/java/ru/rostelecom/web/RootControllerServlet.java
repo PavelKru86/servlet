@@ -2,7 +2,6 @@ package ru.rostelecom.web;
 
 import org.json.JSONArray;
 import ru.rostelecom.Repository.StateRepository;
-import ru.rostelecom.model.State;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,8 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
 import org.slf4j.Logger;
 
 import static org.slf4j.LoggerFactory.getLogger;
