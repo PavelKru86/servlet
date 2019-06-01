@@ -1,7 +1,7 @@
 package ru.rostelecom.web;
 
 import org.json.JSONArray;
-import ru.rostelecom.Repository.StateRepository;
+import ru.rostelecom.repository.StateRepository;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

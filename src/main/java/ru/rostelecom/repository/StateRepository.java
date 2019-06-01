@@ -1,4 +1,4 @@
-package ru.rostelecom.Repository;
+package ru.rostelecom.repository;
 
 import ru.rostelecom.model.State;
 
