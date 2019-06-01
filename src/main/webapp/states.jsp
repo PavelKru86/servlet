@@ -1,12 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Pavel Kruchkov
-  Date: 30.05.2019
-  Time: 9:19
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
 <head>
@@ -31,48 +23,33 @@
                     <th>Short state name</th>
                 </tr>
             </thead>
-
         </table>
-
     </div>
 
 
     <script type="text/javascript">
 
-            $(document).ready(function () {
-                $.getJSON('state', function(s) {
-                    $("#table").DataTable({
-                        "bServerSide": true,
-                        ajax: {
-                            "url": "/state",
-                            "dataSrc": function (json) {
-                                var return_data = new Array();
-                                for(var i=0;i< json.state[0].length; i++){
-                                    return_data.push({
-                                        'name': json.state[0][i].name,
-                                        'short_name'  :  json.state[0][i].short_name
+        $(document).ready(function () {
 
-                                    })
-                                }
-                                return return_data;
-                            }
+            $("#table").DataTable({
 
-                        },
+                ajax: {
+                    "url": "/state",
+                    "dataSrc": ""
+                },
 
-                        "paging": false,
-                        "info": false,
-                        "searching": false,
-                        "ordering": false,
+                "paging": false,
+                "info": false,
+                "searching": false,
+                "ordering": false,
 
-                        "columns": [
-                            {'data': 'name'},
-                            {'data': 'short_name'}
-
-
-                        ]
-                    });
-                });
+                "columns": [
+                    {'data': 'name'},
+                    {'data': 'shortName'}
+                ]
             });
+
+        });
 
     </script>
 
